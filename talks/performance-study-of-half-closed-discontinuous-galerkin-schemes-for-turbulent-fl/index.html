@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Performance Study of Half-Closed Discontinuous Galerkin Schemes for Turbulent Flow Problems — NAHOMCon 2026</title>
+  <meta name="description" content="Performance Study of Half-Closed Discontinuous Galerkin Schemes for Turbulent Flow Problems">
+  <link rel="stylesheet" href="/css/speakers.css">
+</head>
+<body>
+  <main>
+    <header class="site-header">NAHOMCon 2026</header>
+    <a class="back-link" href="/talks/">← All talks</a>
+    <h1>Performance Study of Half-Closed Discontinuous Galerkin Schemes for Turbulent Flow Problems</h1>
+    <p class="talk-meta"><span class="talk-meta-label">Track</span> CFD 2</p>
+    <p class="talk-meta"><span class="talk-meta-label">Presenting speaker</span> Per-Olof Persson (University of California, Berkeley)</p>
+    <p class="talk-meta"><span class="talk-meta-label">Authors</span> Per-Olof Persson (University of California, Berkeley); Yulong Pan (University of California, Berkeley)</p>
+    <section>
+      <h3>Abstract</h3>
+      <p>We present a performance study of the newly proposed Half-Closed Discontinuous Galerkin (HCDG) scheme \[1\] in the context of high-order accurate turbulent flow simulations. This method utilizes half-closed nodes, which improve the efficiency of assembling DG operators and enhance quadrature accuracy compared to traditional Gauss-Lobatto nodes. We investigate the nonlinear stability benefits resulting from the higher integration order, as well as the computational cost advantages over a fully integrated DG scheme. Additionally, we discuss novel linear solver techniques based on elimination, demonstrating how classical static condensation can be applied to a discontinuous Galerkin discretization. We also examine various solvers for the resulting linear system, including ILU-based smoothers and multigrid methods. Our preliminary results indicate speedups of 5–10x due to the smaller matrices and the improved spectral properties of the eliminated operators. We validate these findings through several benchmark problems in high-order CFD simulations, including Large Eddy Simulations of under-resolved turbulent flows.\[1\] Y. Pan, P.-O. Persson, &quot;Half-closed discontinuous Galerkin discretisations,&quot; J. Comput. Phys., Volume 524, 1 March 2025, 113731.</p>
+    </section>
+  </main>
+</body>
+</html>

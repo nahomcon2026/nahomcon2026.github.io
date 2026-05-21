@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scalable implicit shock tracking for hypersonic flows:parallel solvers and preconditioning strategies — NAHOMCon 2026</title>
+  <meta name="description" content="Scalable implicit shock tracking for hypersonic flows:parallel solvers and preconditioning strategies">
+  <link rel="stylesheet" href="/css/speakers.css">
+</head>
+<body>
+  <main>
+    <header class="site-header">NAHOMCon 2026</header>
+    <a class="back-link" href="/talks/">← All talks</a>
+    <h1>Scalable implicit shock tracking for hypersonic flows:parallel solvers and preconditioning strategies</h1>
+    <p class="talk-meta"><span class="talk-meta-label">Track</span> CFD 1</p>
+    <p class="talk-meta"><span class="talk-meta-label">Presenting speaker</span> Alexander M. Pérez Reyes (Department of Aerospace and Mechanical Engineering, University of Notre Dame)</p>
+    <p class="talk-meta"><span class="talk-meta-label">Authors</span> Alexander M. Pérez Reyes (Department of Aerospace and Mechanical Engineering, University of Notre Dame); Matthew J. Zahr (Department of Aerospace and Mechanical Engineering, University of Notre Dame)</p>
+    <section>
+      <h3>Abstract</h3>
+      <p>Shock-dominated flows, such as those encountered in hypersonic aerodynamics, pose fundamental challenges for high-order numerical methods, primarily due to the sharp gradients in the flow field that require additional considerations to model accurately and efficiently. Resolving these flows at engineering-relevant scales demands both a powerful shock-handling strategy and scalable numerical infrastructure.Implicit shock tracking (IST) addresses this challenge by formulating an optimization problem in which the element faces of the mesh are aligned with discontinuities and other features in the flow field, leveraging the inter-element jumps in a discontinuous Galerkin discretization to represent them perfectly. This enables high-order accuracy on comparatively coarse meshes without the need for excessive refinement, limiting, or artificial viscosity methods. Prior work has demonstrated IST on moderate two- and three-dimensional problems and introduced robustness measures to stabilize the method under challenging flow conditions.This work extends IST to large-scale, parallel computations by presenting a distributed-memory (MPI) implementation that enables parallel solution of the large linear systems arising from the resulting optimization problem. We develop linear solvers and preconditioners tailored to the structure of these systems, and address practical mesh-handling considerations --- including mesh parametrization, element collapses, and other robustness measures --- that become critical at scale. The approach is demonstrated on three-dimensional shock-dominated flow problems in the hypersonic regime.</p>
+    </section>
+  </main>
+</body>
+</html>

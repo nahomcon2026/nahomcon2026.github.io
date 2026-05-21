@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Stochastic, High-Order Discontinuous Galerkin Solver for Simulation of Chemically Reacting Turbulent Flow — NAHOMCon 2026</title>
+  <meta name="description" content="A Stochastic, High-Order Discontinuous Galerkin Solver for Simulation of Chemically Reacting Turbulent Flow">
+  <link rel="stylesheet" href="/css/speakers.css">
+</head>
+<body>
+  <main>
+    <header class="site-header">NAHOMCon 2026</header>
+    <a class="back-link" href="/talks/">← All talks</a>
+    <h1>A Stochastic, High-Order Discontinuous Galerkin Solver for Simulation of Chemically Reacting Turbulent Flow</h1>
+    <p class="talk-meta"><span class="talk-meta-label">Track</span> CFD 2</p>
+    <p class="talk-meta"><span class="talk-meta-label">Presenting speaker</span> Priyank A. Dhyani (San Diego State University)</p>
+    <p class="talk-meta"><span class="talk-meta-label">Authors</span> Priyank A. Dhyani (San Diego State University), Pavel P. Popov (San Diego State University), Gustaaf B. Jacobs (San Diego State University)</p>
+    <section>
+      <h3>Abstract</h3>
+      <p>An explicit Discontinuous Galerkin Spectral Element Method (DSGEM) is presented for simulation of chemically reacting, turbulent flows based on a stochastic Large-Eddy Simulation (LES) model. The turbulent subgrid-scales in Navier-Stokes approximations based on the DGSEM are numerically filtered using an exponential filter. Species transport is modeled stochastically based on a Langevin equation. An explicit semi-Lagrangian method, conditioned on the filtered velocity fields, constructs the joint probability density function of the species based on Monte-Carlo samples. The solver is coupled to the Cantera library to compute chemical kinetics, and temperature dependent mixture properties. The chemical source terms and subgrid-scales are closed with the Filtered Mass Density Function (FMDF) method. The DGSEM solver is high-order accurate, both in terms of spatial discretization and statistical modeling. It is also local, boundary fitted, and highly parallelizable, consistent with DGSEM. Verification and validation benchmarks are presented, including an adiabatic flame simulation, flame holding over a circular cylinder and the Sandia turbulent flame benchmark.</p>
+    </section>
+  </main>
+</body>
+</html>

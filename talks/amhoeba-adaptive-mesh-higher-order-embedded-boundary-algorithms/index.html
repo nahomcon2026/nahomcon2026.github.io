@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AMHOEBA: Adaptive Mesh Higher-Order Embedded Boundary Algorithms — NAHOMCon 2026</title>
+  <meta name="description" content="AMHOEBA: Adaptive Mesh Higher-Order Embedded Boundary Algorithms">
+  <link rel="stylesheet" href="/css/speakers.css">
+</head>
+<body>
+  <main>
+    <header class="site-header">NAHOMCon 2026</header>
+    <a class="back-link" href="/talks/">← All talks</a>
+    <h1>AMHOEBA: Adaptive Mesh Higher-Order Embedded Boundary Algorithms</h1>
+    <p class="talk-meta"><span class="talk-meta-label">Track</span> High order accuracy and geometry</p>
+    <p class="talk-meta"><span class="talk-meta-label">Presenting speaker</span> Hans Johansen (LBNL)</p>
+    <p class="talk-meta"><span class="talk-meta-label">Authors</span> Hans Johansen (LBNL); Rochishnu Chowdhury (LBNL); Nate Overton-Katz (AMD)</p>
+    <section>
+      <h3>Abstract</h3>
+      <p>We present AMHOEBA, a software suite for algorithms that combine higher-order cut cell discretizations with adaptive mesh refinement for a variety of application domains. To help deal with the complexity of embedded boundary (EB) data, we use distributed hashes to manage sparse indexing into spatial locations, refinement levels, and complex geometric information. Special support and solvers are available for merging regular grid discretizations with sparse matrix operations on subsets of the domain; we call these &quot;hyper-sparse&quot; operations since they only apply boundary conditions and irregular stencil operations in narrow regions instead of the full mesh. We demonstrate the approach with several test problems for model equations with higher-order space-time discretizations. We also show how very accurate solutions can be obtained for Maxwell’s equations with complex material interfaces, and for moving boundary solidification problems. The structure of AMHOEBA makes it possible to compose complex higher-order EB algorithms into fully accelerated, highly accurate application simulations.</p>
+    </section>
+  </main>
+</body>
+</html>

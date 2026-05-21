@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A GPU-Accelerated Discontinuous Galerkin Particle-in-Cell (DG-PIC) Solver for Simulations of Plasmas — NAHOMCon 2026</title>
+  <meta name="description" content="A GPU-Accelerated Discontinuous Galerkin Particle-in-Cell (DG-PIC) Solver for Simulations of Plasmas">
+  <link rel="stylesheet" href="/css/speakers.css">
+</head>
+<body>
+  <main>
+    <header class="site-header">NAHOMCon 2026</header>
+    <a class="back-link" href="/talks/">← All talks</a>
+    <h1>A GPU-Accelerated Discontinuous Galerkin Particle-in-Cell (DG-PIC) Solver for Simulations of Plasmas</h1>
+    <p class="talk-meta"><span class="talk-meta-label">Track</span> Kinetic Equations and Plasma Physics 2</p>
+    <p class="talk-meta"><span class="talk-meta-label">Presenting speaker</span> Gustaaf Jacobs (San Diego State University)</p>
+    <p class="talk-meta"><span class="talk-meta-label">Authors</span> Tristan Montoya (HyperComp), Nigel Nunn (Independent Researcher), Tim Warburton (Virginia Tech), Vijaya Shankar (HyperComp), William Hall (HyperComp), Gustaaf Jacobs (San Diego State University)</p>
+    <section>
+      <h3>Abstract</h3>
+      <p>A GPU-accelerated particle-in-cell solver for plasma simulations is presented, employing a nodal discontinuous Galerkin approximation of Maxwell&#x27;s equations on unstructured triangular meshes \\cite{HW02} coupled with a Lagrangian particle method \\cite{JH06}. Charged particles are traced in their Lagrangian frame and coupled to the time-domain field solver using high-order interpolation and a charge-conserving deposition scheme. Gauss&#x27; law is enforced through a hyperbolic divergence cleaning method based on a Lagrange multiplier constraint. To alleviate stiffness, we use an IMEX-SDIRK method \\cite{JH09} to solve Maxwell&#x27;s equations with hyperbolic divergence cleaning implicitly while advancing particles explicitly. The solver supports configurable arithmetic precision, both in its use of NVIDIA&#x27;s cuDSS direct sparse solver for the implicit field solve and in its use of optimized CUDA kernels for explicit particle tracking. The performance of the GPU code with mixed 64-bit/32-bit precision is assessed through simulations of the Weibel instability and a planar sheath problem. A speedup by a factor of more than 20 is achieved for the CUDA-accelerated solver on an NVIDIA GeForce RTX 5060 Ti GPU relative to a serial CPU implementation on an Intel Core i9-13900HK, rendering practical simulations feasible.</p>
+    </section>
+  </main>
+</body>
+</html>

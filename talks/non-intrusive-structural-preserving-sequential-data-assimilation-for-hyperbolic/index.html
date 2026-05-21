@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Non-intrusive Structural-Preserving Sequential Data Assimilation for Hyperbolic Systems — NAHOMCon 2026</title>
+  <meta name="description" content="Non-intrusive Structural-Preserving Sequential Data Assimilation for Hyperbolic Systems">
+  <link rel="stylesheet" href="/css/speakers.css">
+</head>
+<body>
+  <main>
+    <header class="site-header">NAHOMCon 2026</header>
+    <a class="back-link" href="/talks/">← All talks</a>
+    <h1>Non-intrusive Structural-Preserving Sequential Data Assimilation for Hyperbolic Systems</h1>
+    <p class="talk-meta"><span class="talk-meta-label">Track</span> ML and data-driven modeling</p>
+    <p class="talk-meta"><span class="talk-meta-label">Presenting speaker</span> Tongtong Li (University of Maryland, Baltimore County)</p>
+    <p class="talk-meta"><span class="talk-meta-label">Authors</span> Lizuo Liu (Dartmouth College), Tongtong Li (University of Maryland, Baltimore County), Anne Gelb (Dartmouth College)</p>
+    <section>
+      <h3>Abstract</h3>
+      <p>Data assimilation (DA) combines model forecasts with observations to improve state estimation in dynamical systems and plays a central role in geophysical applications. Classical DA methods typically assume that the governing equations are known, which is unlikely for most real-world applications. While machine learning (ML) surrogates offer a flexible alternative, standard approaches tend to degrade in noisy and data-scarce regimes, particularly for systems with sharp gradients or discontinuities.This work introduces a non-intrusive, structure-preserving sequential data assimilation (NSSDA) framework designed for hyperbolic systems with partially unknown dynamics. The proposed method leverages structural information in both the forecast and analysis stages. During forecasting, an entropy-stable conservative flux-form network (ESCFN) is used to construct a surrogate that respects key physical constraints. During the analysis step, a structurally informed ensemble transform Kalman filter (SETKF) incorporates local gradient-based statistical structure to improve ensemble updates.The framework operates in a highly constrained setting, using only a single noisy trajectory for both training and assimilation. Numerical experiments for shallow water and Euler systems demonstrate improved predictive performance relative to standard ensemble-based approaches.</p>
+    </section>
+  </main>
+</body>
+</html>

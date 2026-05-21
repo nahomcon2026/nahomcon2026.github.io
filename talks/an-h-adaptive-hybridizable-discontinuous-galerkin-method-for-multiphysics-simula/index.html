@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>An h-adaptive Hybridizable Discontinuous Galerkin Method for Multiphysics Simulations — NAHOMCon 2026</title>
+  <meta name="description" content="An h-adaptive Hybridizable Discontinuous Galerkin Method for Multiphysics Simulations">
+  <link rel="stylesheet" href="/css/speakers.css">
+</head>
+<body>
+  <main>
+    <header class="site-header">NAHOMCon 2026</header>
+    <a class="back-link" href="/talks/">← All talks</a>
+    <h1>An h-adaptive Hybridizable Discontinuous Galerkin Method for Multiphysics Simulations</h1>
+    <p class="talk-meta"><span class="talk-meta-label">Track</span> CFD 1</p>
+    <p class="talk-meta"><span class="talk-meta-label">Presenting speaker</span> Samuel Austin (Massachusetts Institute of Technology)</p>
+    <p class="talk-meta"><span class="talk-meta-label">Authors</span> Samuel Austin (Massachusetts Institute of Technology); Jaime Peraire (Massachusetts Institute of Technology); Ngoc Cuong Nguyen (Massachusetts Institute of Technology)</p>
+    <section>
+      <h3>Abstract</h3>
+      <p>An h-adaptive framework for realizing increased simulation throughput for Hybridizable Discontinuous Galerkin (HDG) methods is implemented. Many problems of interest, such as those arising in plasma physics applications, exhibit transient, local features driven by nonlinear multiphysics couplings that must be accurately captured in order to resolve global quantities such as voltage, current, and breakdown rates. HDG schemes are attractive for modeling these phenomena due to their high order accuracy, stable discretization of a wide range of convective and diffusive operators, reduced number of globally coupled unknowns, and straightforward definition of boundary conditions. However, HDG methods require construction of the Jacobian matrix in implicit time integration schemes, which limits their applicability due to the increased memory and compute requirements for large scale simulations. One strategy to alleviate this bottleneck is to pursue h-adaptive schemes that adaptively refine and coarsen the mesh to track local features without requiring a globally refined mesh. In this work, we implement h-adaptive HDG methods by coupling the discretization to the t8code library which exposes routines for performing adaptivity across a range of unstructured element types. The framework is demonstrated for the case of a low temperature plasma discharge and shock propagation in a compressible Euler simulation.</p>
+    </section>
+  </main>
+</body>
+</html>

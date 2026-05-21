@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>High-Order Implicit Shock Tracking of External Viscous Shock-Dominated Flows — NAHOMCon 2026</title>
+  <meta name="description" content="High-Order Implicit Shock Tracking of External Viscous Shock-Dominated Flows">
+  <link rel="stylesheet" href="/css/speakers.css">
+</head>
+<body>
+  <main>
+    <header class="site-header">NAHOMCon 2026</header>
+    <a class="back-link" href="/talks/">← All talks</a>
+    <h1>High-Order Implicit Shock Tracking of External Viscous Shock-Dominated Flows</h1>
+    <p class="talk-meta"><span class="talk-meta-label">Track</span> CFD 1</p>
+    <p class="talk-meta"><span class="talk-meta-label">Presenting speaker</span> Huijing Dong (University of Notre Dame)</p>
+    <p class="talk-meta"><span class="talk-meta-label">Authors</span> Huijing Dong (University of Notre Dame); Matthew J. Zahr (University of Notre Dame)</p>
+    <section>
+      <h3>Abstract</h3>
+      <p>High-order implicit shock tracking is a class of optimization-based numerical methods to approximate solutions of conservation laws with discontinuities by aligning elements of the computational mesh with non-smooth flow features. This alignment ensures that discontinuities are represented as inter-element jumps, while high-order basis functions accurately approximate smooth regions of the solution without the need for nonlinear stabilization, enabling accurate solutions on coarse meshes. In this talk, we present a robust numerical framework for viscous, shock-dominated flows at high Mach and Reynolds numbers based on implicit shock tracking and high-order discontinuous Galerkin discretizations. The proposed method employs inviscid implicit shock tracking to align the computational mesh with flow discontinuities, enabling accurate representation of shock structures. Once a shock-aligned mesh is obtained, upstream farfield elements are removed and the shock is treated as a computational boundary for subsequent viscous flow computations on the post-shock domain. This decoupled strategy improves robustness while avoiding severe mesh distortion often encountered in fully coupled viscous shock optimization. The effectiveness and flexibility of the framework are demonstrated through a set of hypersonic benchmark problems, yielding accurate predictions of surface pressure and heat flux profiles.</p>
+    </section>
+  </main>
+</body>
+</html>

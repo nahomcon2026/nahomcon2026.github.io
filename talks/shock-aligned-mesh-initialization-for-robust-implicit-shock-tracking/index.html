@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shock-aligned mesh initialization for robust implicit shock tracking — NAHOMCon 2026</title>
+  <meta name="description" content="Shock-aligned mesh initialization for robust implicit shock tracking">
+  <link rel="stylesheet" href="/css/speakers.css">
+</head>
+<body>
+  <main>
+    <header class="site-header">NAHOMCon 2026</header>
+    <a class="back-link" href="/talks/">← All talks</a>
+    <h1>Shock-aligned mesh initialization for robust implicit shock tracking</h1>
+    <p class="talk-meta"><span class="talk-meta-label">Track</span> CFD 5</p>
+    <p class="talk-meta"><span class="talk-meta-label">Presenting speaker</span> Xuehui Qian (University of Notre Dame)</p>
+    <p class="talk-meta"><span class="talk-meta-label">Authors</span> Xuehui Qian (University of Notre Dame); Matthew Zahr (University of Notre Dame)</p>
+    <section>
+      <h3>Abstract</h3>
+      <p>Implicit shock tracking (IST) resolves discontinuities in shock-dominated flows with high-order accuracy by aligning element faces of the computational mesh with shocks and other flow features. By leveraging inter-element jumps in a discontinuous Galerkindiscretization to represent discontinuities, IST avoids the excessive mesh refinement, artificial viscosity, and limiting strategies required by traditional shock-capturing methods. However, when initialized from a shock-agnostic mesh, the underlying optimization problem can suffer from robustness issues and significantly increased computational cost. This work introduces a mesh preprocessing strategy that generates an approximately shock-aligned mesh from a standard shock-capturing solution, providing a high-quality initialization for the IST optimization problem. The method leverages an artificial viscosity sensor to identify shock locations within the existing mesh and systematically repositions mesh nodes to align element faces with dominant shock structures. When multiple candidate positions exist for a given node, the location associated with the largest artificial viscosity value is selected to promote consistent alignment. The approach is validated on unstructured triangular meshes in two and three dimensions across a range of polynomial orders, demonstrating significant improvements in the robustness and efficiency of subsequent IST computations.</p>
+    </section>
+  </main>
+</body>
+</html>

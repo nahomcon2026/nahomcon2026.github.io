@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A High-Order Discontinuous Galerkin Method for Computationof Hessians of Flow Maps — NAHOMCon 2026</title>
+  <meta name="description" content="A High-Order Discontinuous Galerkin Method for Computationof Hessians of Flow Maps">
+  <link rel="stylesheet" href="/css/speakers.css">
+</head>
+<body>
+  <main>
+    <header class="site-header">NAHOMCon 2026</header>
+    <a class="back-link" href="/talks/">← All talks</a>
+    <h1>A High-Order Discontinuous Galerkin Method for Computationof Hessians of Flow Maps</h1>
+    <p class="talk-meta"><span class="talk-meta-label">Track</span> CFD 6</p>
+    <p class="talk-meta"><span class="talk-meta-label">Presenting speaker</span> Sergio A. Castiblanco-Ballesteros (San Diego State University)</p>
+    <p class="talk-meta"><span class="talk-meta-label">Authors</span> Sergio A. Castiblanco-Ballesteros (San Diego State University); Gustaaf B. Jacobs (San Diego State University)</p>
+    <section>
+      <h3>Abstract</h3>
+      <p>Discontinuous Galerkin spectral element method (DG-SEM) solvers for the Navier–Stokes equations compute Eulerian velocity fields with high-order spatial accuracy. Increasingly, Lagrangian diagnostics based on flow maps and their gradients, such as finite-time Lyapunov exponents (FTLE) and material-sheet curvature, are used to visualize coherent flow structures. A DG-SEM-consistent algorithm is presented to compute flow-map gradients and Hessians without degrading accuracy. In the first stage, particles are seeded at quadrature nodes and advected with the DG-SEM solver over a finite-time interval. The advected elemental solution encodes the flow map while preserving the piecewise polynomial basis. In the second stage, flow-map gradients and Hessians are evaluated using DG-SEM element operators and high-order interpolation. This two-stage workflow avoids the memory and I/O burden of storing densely sampled velocity snapshots, which would otherwise be required to achieve comparable accuracy. In examples, we illustrate how the flow-map gradients quantify finite-time deformation: eigenvectors give principal stretching directions, and eigenvalues identify material barriers and coherent Lagrangian structures. Likewise, the flow-map Hessian captures nonlinear spatial variation of deformation and provides directional measures of bending and folding, relevant to stability diagnostics and finite-time separation indicators.</p>
+    </section>
+  </main>
+</body>
+</html>

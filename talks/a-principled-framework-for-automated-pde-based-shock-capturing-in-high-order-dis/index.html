@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Principled Framework for Automated PDE-Based Shock Capturing in High-Order Discontinuous Galerkin Methods — NAHOMCon 2026</title>
+  <meta name="description" content="A Principled Framework for Automated PDE-Based Shock Capturing in High-Order Discontinuous Galerkin Methods">
+  <link rel="stylesheet" href="/css/speakers.css">
+</head>
+<body>
+  <main>
+    <header class="site-header">NAHOMCon 2026</header>
+    <a class="back-link" href="/talks/">← All talks</a>
+    <h1>A Principled Framework for Automated PDE-Based Shock Capturing in High-Order Discontinuous Galerkin Methods</h1>
+    <p class="talk-meta"><span class="talk-meta-label">Track</span> CFD 2</p>
+    <p class="talk-meta"><span class="talk-meta-label">Presenting speaker</span> Aaron Marques (University of Notre Dame)</p>
+    <p class="talk-meta"><span class="talk-meta-label">Authors</span> Aaron Marques (University of Notre Dame), Matthew J. Zahr (University of Notre Dame)</p>
+    <section>
+      <h3>Abstract</h3>
+      <p>High-order discontinuous Galerkin (DG) methods offer superior accuracy for compressible flow simulations but suffer from spurious oscillations near shocks, requiring artificial viscosity (AV) for stabilization. Existing PDE-based AV approaches lack a systematic parameterization, making robust automation difficult. We present a principled parameterization of the AV PDE through Green&#x27;s function analysis that yields approximately independent control over the AV spatial width and magnitude through separate parameters. A scaling analysis based on self-similarity in the inviscid limit reveals that element-size-dependent prefactors are essential for consistent behavior under mesh refinement. We further investigate the impact of variable formulation on solver robustness through systematic parameter sweeps over conservative, entropy, and logarithmic variables on a Mach 5 hypersonic cylinder. Logarithmic variables are found to be substantially more robust than conservative and entropy formulations, significantly reducing solver stalling failures. Building on these insights, we formulate a finite-difference-based optimization strategy that automatically determines shock capturing parameters yielding high-quality solutions, eliminating manual tuning. The framework is demonstrated on challenging two- and three-dimensional problems including transonic, supersonic, and hypersonic flows governed by the Euler and Navier-Stokes equations, showcasing robust, high-order accurate shock capturing without user intervention.</p>
+    </section>
+  </main>
+</body>
+</html>

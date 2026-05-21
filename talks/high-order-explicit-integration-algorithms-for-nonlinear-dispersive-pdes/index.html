@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>High-Order Explicit Integration Algorithms for Nonlinear Dispersive PDEs — NAHOMCon 2026</title>
+  <meta name="description" content="High-Order Explicit Integration Algorithms for Nonlinear Dispersive PDEs">
+  <link rel="stylesheet" href="/css/speakers.css">
+</head>
+<body>
+  <main>
+    <header class="site-header">NAHOMCon 2026</header>
+    <a class="back-link" href="/talks/">← All talks</a>
+    <h1>High-Order Explicit Integration Algorithms for Nonlinear Dispersive PDEs</h1>
+    <p class="talk-meta"><span class="talk-meta-label">Track</span> Time integration 2</p>
+    <p class="talk-meta"><span class="talk-meta-label">Presenting speaker</span> James M. Hyman (Tulane University)</p>
+    <p class="talk-meta"><span class="talk-meta-label">Authors</span> James M. Hyman (Tulane University)</p>
+    <section>
+      <h3>Abstract</h3>
+      <p>We investigate high-order explicit time integration for nonlinear dispersive partial differential equations, including the KdV and K(m,n) equations, with emphasis on stability and error mechanisms. Spatial derivatives are approximated using a Fourier pseudo-spectral discretization, and time advancement is performed with a filtered variable-order, variable-stepsize third-order explicit leapfrog predictor–corrector algorithm.Nonlinear dispersive solitons pose a stringent test for high-order methods, as numerical stability depends on preserving the balance between nonlinear steepening and dispersion. Expanded nonlinear terms introduce diffusion-like contributions that can act as backward diffusion locally, potentially destabilizing the scheme if nonlinear terms are not treated carefully. We compare conservative and nonconservative formulations to identify discrete artifacts and quantify convergence as we vary Fourier resolution and local time tolerances.Limited smoothness at the K(m, n) compacton edges reduces spectral accuracy and leads to dispersive oscillations. To control these errors, we apply a selective Fourier-space dissipation operator that damps only the higher modes, thereby accurately conserving mass, momentum, and the Hamiltonian. We also introduce a low-pass Fourier-space filter on the time derivatives to remove the unresolved high-frequency modes that restrict the time step size. The results clarify the stability constraints and practical error-control strategies for high-order explicit solvers of nonlinear dispersive PDE systems.</p>
+    </section>
+  </main>
+</body>
+</html>

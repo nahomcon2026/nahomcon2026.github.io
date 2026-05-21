@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Well-balanced positivity-preserving high-order discontinuous Galerkin methods for Euler equations with gravitation — NAHOMCon 2026</title>
+  <meta name="description" content="Well-balanced positivity-preserving high-order discontinuous Galerkin methods for Euler equations with gravitation">
+  <link rel="stylesheet" href="/css/speakers.css">
+</head>
+<body>
+  <main>
+    <header class="site-header">NAHOMCon 2026</header>
+    <a class="back-link" href="/talks/">← All talks</a>
+    <h1>Well-balanced positivity-preserving high-order discontinuous Galerkin methods for Euler equations with gravitation</h1>
+    <p class="talk-meta"><span class="talk-meta-label">Track</span> CFD 4</p>
+    <p class="talk-meta"><span class="talk-meta-label">Presenting speaker</span> Yang Yang (Michigan Technological University)</p>
+    <p class="talk-meta"><span class="talk-meta-label">Authors</span> Jie Du (East China Normal University), Yang Yang (Michigan Technological University), Fangyao Zhu (Michigan Technological University)</p>
+    <section>
+      <h3>Abstract</h3>
+      <p>In this work, we develop high order discontinuous Galerkin (DG) methods with Lax-Friedrich fluxes for Euler equations under gravitational fields. Such problems may yield steady-state solutions and the density and pressure are positive. There were plenty of previous works developing either well-balanced (WB) schemes to preserve the steady states or positivity-preserving (PP) schemes to get positive density and pressure. However, it is rather difficult to construct WB PP schemes with Lax-Friedrich fluxes, due to the penalty term in the flux. In fact, for general PP DG methods, the penalty coefficient must be sufficiently large, while the WB scheme requires that to be zero. This contradiction can hardly be fixed following the original design of the PP technique, where the numerical fluxes in the DG scheme are treated separately. However, if the numerical approximations are close to the steady state, the numerical fluxes are not independent, and it is possible to use the relationship to obtain a new penalty parameter which is zero at the steady state and the full scheme is PP. To be more precise, we first reformulate the source term such that it balances with the flux term when the steady state has reached. To obtain positive numerical density and pressure, we choose a special penalty coefficient in the Lax-Friedrich flux, which is zero at the steady state. The technique works for general steady-state solutions with zero velocities. Numerical experiments are given to show the performance of the proposed methods.</p>
+    </section>
+  </main>
+</body>
+</html>
