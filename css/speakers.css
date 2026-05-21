@@ -1,0 +1,168 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background: #fff;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+}
+
+.site-header {
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  font-size: 0.9375rem;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.75rem;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.affiliation {
+  margin: 0 0 1.5rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+h2 {
+  margin: 0 0 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.35;
+  font-weight: 600;
+  color: #222;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section h3 {
+  margin: 0 0 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #666;
+}
+
+section p {
+  margin: 0 0 1rem;
+}
+
+section p:last-child {
+  margin-bottom: 0;
+}
+
+.page-title {
+  margin: 0 0 1.5rem;
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+.speaker-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.speaker-list li {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.speaker-list li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.speaker-list a {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.speaker-list a:hover .speaker-name {
+  color: #2563eb;
+}
+
+.speaker-name {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.speaker-affiliation {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9375rem;
+  color: #444;
+}
+
+.speaker-talk-title {
+  display: block;
+  font-size: 0.9375rem;
+  color: #666;
+  font-style: italic;
+}
+
+.references {
+  margin-top: 1rem;
+  padding-left: 1.25rem;
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.references li {
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 600px) {
+  main {
+    padding: 2.5rem 1.5rem 4rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.375rem;
+  }
+
+  .page-title {
+    font-size: 1.75rem;
+  }
+}

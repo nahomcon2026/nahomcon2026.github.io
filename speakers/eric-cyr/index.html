@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eric C. Cyr — NAHOMCon 2026 Plenary</title>
+  <meta name="description" content="Towards multilevel training algorithms: Applying scientific computing perspectives to neural networks">
+  <link rel="stylesheet" href="/css/speakers.css">
+</head>
+<body>
+  <main>
+    <header class="site-header">NAHOMCon 2026</header>
+    <a class="back-link" href="/speakers/">← All plenary speakers</a>
+    <h1>Eric C. Cyr</h1>
+    <p class="affiliation">Principal Member of Technical Staff, Sandia National Laboratories</p>
+    <h2>Towards multilevel training algorithms: Applying scientific computing perspectives to neural networks</h2>
+    <section>
+      <h3>Abstract</h3>
+      <p>The recent explosion of large language models (LLMs) in the commercial space has created unprecedented energy demands driven by the growth of data centers. One aspect of this is the need to train large-scale neural network models on massive amounts of data. Recent work has demonstrated that pre-training a LLM on the Frontier supercomputer would require two years with ideal parallelism [1]. Yet despite advances in optimizers, the training algorithms remain largely the same even as the neural networks scale to trillions of parameters and suffer from quadratic scaling in the number parameters. This motivates our aspirational hypothesis that multilevel (or hierarchical) methodologies can dramatically accelerate training algorithms.</p>
+      <p>This talk proceeds in three parts. In the first part, we discuss an adaptive basis perspective that has proved fruitful in Scientific Machine Learning (SciML) [2]. With this perspective we develop efficient "operator-split" training algorithms, and new initialization strategies motivated by stability concerns. The second part presents a novel layer-parallel training algorithm that based on multigrid-in-time methods [3]. This serves to accelerate training of neural networks but doesn't provide any algorithmic advantage. The third part presents a view of Kolmogorov-Arnold networks (KANs) that reformulate the activation function as a spline that can be naturally adapted [4]. We explore how this approach can be related to a multi-channel ReLU network and present a multilevel training algorithm based on the relaxation properties of gradient descent using KANs.</p>
+      <p>Holistically, the goal of this talk is to show how we applied techniques developed for scientific computing to understand and improve neural network training.</p>
+      <ol class="references">
+        <li>Dash, et al., Optimizing distributed training on frontier for large language models. In ISC High Performance 2024 Research Paper Proceedings (39th Intl. Conference), 2024.</li>
+        <li>Cyr, et al., Robust training and initialization of deep neural networks: An adaptive basis viewpoint, Mathematical and Scientific Machine Learning, 2020.</li>
+        <li>Gunther, et al., Layer-parallel training of deep residual neural networks, SIAM Journal on Mathematics of Data Science 2, no. 1 (2020): 1-23.</li>
+        <li>Southworth, et al. Multilevel Training for Kolmogorov Arnold Networks, arXiv:2603.04827, 2026 (submitted to SISC)</li>
+      </ol>
+    </section>
+    <section>
+      <h3>Bio</h3>
+      <p>Eric C. Cyr has been at Sandia Albuquerque since 2009 and is a Principal Member of the Technical staff. Prior to that he received a BS in Computer Science from Clemson University in 2002, and a PhD in Computer Science from University of Illinois at Urbana-Champaign in 2008. His formal training is in numerical methods, and scientific computing. As a Sandian he has worked in a range of diverse areas including high-performance computing, preconditioners for multi-physics, discretizations for computational plasma simulation, sensitivity analysis for PDEs, numerical optimization, and software development for science applications. In 2018, Eric received the DOE Early Career Award to fund a focus on developing layer-parallel methods for training deep neural networks. This work has broadened his exposure to machine learning. To this end, Eric is working to extend the applicability of HPC to deep learning, understand the behavior and approximation properties of neural networks, and develop methodologies where machine learning can be used to enhance the impact of computation on science and engineering disciplines.</p>
+    </section>
+  </main>
+</body>
+</html>
