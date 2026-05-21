@@ -149,6 +149,186 @@ section p:last-child {
   margin-bottom: 0.5rem;
 }
 
+.program-main {
+  max-width: 960px;
+}
+
+.program-intro {
+  margin: 0 0 1.5rem;
+  font-size: 0.9375rem;
+  color: #444;
+}
+
+.program-intro p {
+  margin: 0 0 0.75rem;
+}
+
+.program-intro p:last-child {
+  margin-bottom: 0;
+}
+
+.program-intro a {
+  color: #2563eb;
+}
+
+.nav-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  font-size: 0.9375rem;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.day-section {
+  margin-bottom: 2.5rem;
+}
+
+.day-section:last-child {
+  margin-bottom: 0;
+}
+
+.day-heading {
+  margin: 0 0 1rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.program-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+.program-table thead th {
+  padding: 0.625rem 0.75rem;
+  text-align: left;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #666;
+  background: #f9f9f9;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.program-table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-bottom: 1px solid #eee;
+}
+
+.program-table .col-time {
+  width: 11rem;
+  font-weight: 600;
+  white-space: nowrap;
+  color: #333;
+}
+
+.program-table tr.event-break td {
+  background: #f8f8f8;
+  color: #555;
+}
+
+.program-table tr.event-plenary td {
+  background: #f0f7ff;
+}
+
+.program-table tr.event-plenary a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.program-table tr.event-plenary a:hover {
+  text-decoration: underline;
+}
+
+.session-title {
+  font-weight: 600;
+  margin-bottom: 0.375rem;
+}
+
+.talk-list {
+  margin: 0.375rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.talk-list li {
+  margin-bottom: 0.375rem;
+}
+
+.talk-list li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 599px) {
+  .program-table thead {
+    display: none;
+  }
+
+  .program-table tr {
+    display: block;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+
+  .program-table tr.event-break,
+  .program-table tr.event-plenary {
+    padding: 0.75rem;
+    border-radius: 4px;
+  }
+
+  .program-table td {
+    display: block;
+    padding: 0.25rem 0;
+    border-bottom: none;
+  }
+
+  .program-table td.col-time:empty {
+    display: none;
+  }
+
+  .program-table td.col-time:not(:empty) {
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  .program-table td.col-session1::before,
+  .program-table td.col-session2::before {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #888;
+  }
+
+  .program-table td.col-session1::before {
+    content: "Session 1";
+  }
+
+  .program-table td.col-session2::before {
+    content: "Parallel session 2";
+  }
+
+  .program-table td.col-full::before {
+    display: none;
+  }
+
+  .program-table td.col-session2:empty {
+    display: none;
+  }
+}
+
 @media (min-width: 600px) {
   main {
     padding: 2.5rem 1.5rem 4rem;
